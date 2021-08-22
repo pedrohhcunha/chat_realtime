@@ -54,7 +54,7 @@ export function Chat({ location }) {
                 </header>
                 <main>
                     {messages.map((mes, index) => (
-                        <div key={index} className={`area-message ${mes.user !== data.name ? mes.user === 'Admin' && index !== 0 ? 'admin' : '' : 'outher'}`}>
+                        <div key={index} className={`area-message ${mes.user !== data.name ? mes.user === 'Admin' && index !== 0 ? 'admin' : 'outher' : ''}`}>
                             <div className="message">
                                 {ReactEmoji.emojify(mes.text)}
                                 <span>{mes.user}</span>
