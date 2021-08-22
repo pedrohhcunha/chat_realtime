@@ -15,7 +15,7 @@ export function Chat({ location }) {
     const [data, setData] = useState({});
     const [messages, setMessages] = useState([]);
     const [message, setMessage] = useState('');
-    const ENDPOINT = 'localhost:3030'
+    const ENDPOINT = 'https://backend-chat-pedrohhcunha.herokuapp.com/'
     useEffect(() => {
         setData(queryString.parse(location.search))
 
